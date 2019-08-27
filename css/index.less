@@ -1,0 +1,127 @@
+/*定义变量*/
+@baseColor: #e92322;
+
+/*基础样式*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*头部样式*/
+.navbar {
+    margin-bottom: 0;
+}
+
+.wjs_header {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+
+
+    .row {
+        height: 100%;
+        text-align: center;
+
+        >div:nth-of-type(-n+3) {
+            border-right: 1px solid #ccc;
+
+            >.wjs_code {
+                position: relative;
+                display: block;
+
+                >img {
+                    display: none;
+                    position: absolute;
+                    width: 90%;
+                    left: 50%;
+                    top: 49px;
+                    transform: translate(-50%);
+                    border: 1px solid #ccc;
+                    padding: 8px;
+                }
+
+                &:hover {
+                    >img {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        >div:nth-last-of-type(1) {
+            >.btn-danger {
+                background-color: @baseColor;
+                border-color: @baseColor;
+            }
+
+            >.btn {
+                padding: 3px 15px;
+            }
+
+            >.btn-link {
+                color: #666;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*导航条*/
+.wjs_nav {
+    .navbar-brand {
+        height: 90px;
+        line-height: 40px;
+        font-size: 24px;
+        padding: 0;
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        >.active {
+            >a {
+                background-color: #f8f8f8;
+                border-bottom: 3px solid @baseColor;
+            }
+        }
+
+        >li {
+            >a {
+                height: 90px;
+                line-height: 60px;
+                font-size: 16px;
+            }
+
+            >a:hover,
+            a:focus {
+                counter-reset: #777;
+                border-bottom: 3px solid @baseColor;
+            }
+        }
+    }
+
+    .navbar-toggle {
+        margin-top: 33px;
+    }
+}
+
+/*轮播图*/
+.wjs_banner {
+    .carousel-inner {
+        .mob_img {
+            width: 100%;
+
+            >img {
+                width: 100%;
+            }
+        }
+        .pc_img{
+            width: 100%;
+            height: 410px;
+            display: block;
+            background-position: center center;
+        }
+    }
+}
