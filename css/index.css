@@ -33,6 +33,7 @@ a {
   transform: translate(-50%);
   border: 1px solid #ccc;
   padding: 8px;
+  z-index: 999;
 }
 .wjs_header .row > div:nth-of-type(-n+3) > .wjs_code:hover > img {
   display: block;
@@ -87,4 +88,58 @@ a {
   height: 410px;
   display: block;
   background-position: center center;
+}
+/*信息块*/
+.wjs_info {
+  padding: 30px;
+}
+.wjs_info .icon {
+  font-size: 30px;
+}
+.wjs_info .media {
+  margin: 0;
+  padding: 30px;
+}
+.wjs_info .media > a:hover {
+  color: #e92322;
+  text-decoration: none;
+}
+/*预约块*/
+.wjs_reverse {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-size: 16px;
+}
+.wjs_reverse svg {
+  font-size: 20px;
+}
+.wjs_reverse a {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.wjs_product {
+  clear: both;
+  background-color: #eee;
+}
+.wjs_product .nav-tabs {
+  border-bottom: none;
+}
+.wjs_product .nav-tabs > li > a {
+  height: 80px;
+  line-height: 60px;
+  background-color: #eee;
+}
+.wjs_product .nav-tabs > li > a:hover {
+  background-color: #eee;
+  border: none;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_product .nav-tabs .active a,
+.wjs_product .nav-tabs .active a:hover,
+.wjs_product .nav-tabs .active a:focus {
+  background-color: #eee;
+  border: none;
+  border-bottom: 3px solid #e92322;
 }
