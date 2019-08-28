@@ -323,16 +323,18 @@ a {
 }
 
 /*新闻模块*/
-.wjs_news{
+.wjs_news {
     background-color: #bbb;
     padding: 20px;
-    .wjs_title{
+
+    .wjs_title {
         line-height: 50px;
         font-style: 26px;
         border-bottom: 1px solid #000;
         text-align: center;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             width: 8px;
             height: 8px;
@@ -343,7 +345,8 @@ a {
             bottom: -4px;
         }
     }
-    .wjs_line{
+
+    .wjs_line {
         width: 1px;
         height: 100%;
         border: 1px dashed @baseColor;
@@ -352,11 +355,12 @@ a {
         top: 0;
     }
 
-    .nav-tabs{
-        >li{
+    .nav-tabs {
+        >li {
             margin-bottom: 60px;
-            >a{
-               background-color: #ccc;
+
+            >a {
+                background-color: #ccc;
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
@@ -364,48 +368,61 @@ a {
                 margin: 0;
                 text-align: center;
                 border: none;
-                .icon{
+
+                .icon {
                     font-size: 40px;
                     text-align: center;
                     margin-top: 10px;
                     color: #666;
                 }
             }
-            >a:hover{
+
+            >a:hover {
                 background-color: @baseColor;
                 border: none;
-                .icon{
+
+                .icon {
                     color: #fff;
                 }
             }
-            &.active{
-                >a,a:hover,a:focus{
+
+            &.active {
+
+                >a,
+                a:hover,
+                a:focus {
                     background-color: @baseColor;
                     border: none;
-                    .icon{
+
+                    .icon {
                         color: #fff;
                     }
                 }
-               
+
             }
         }
-        >li:nth-last-of-type(1){
+
+        >li:nth-last-of-type(1) {
             margin: 0px;
         }
+
         @media screen and (min-width:768px) and(max-width:992px) {
-            >li{
+            >li {
                 margin: 20px 30px;
             }
-            >li:nth-last-of-type(1){
+
+            >li:nth-last-of-type(1) {
                 margin: 20px 30px;
             }
         }
+
         @media screen and(max-width:768px) {
-            >li{
+            >li {
                 margin: 20px 0px;
                 width: 25%;
             }
-            >li:nth-last-of-type(1){
+
+            >li:nth-last-of-type(1) {
                 margin: 20px 0px;
                 width: 25%;
             }
