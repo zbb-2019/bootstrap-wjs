@@ -329,3 +329,23 @@ a {
     width: 25%;
   }
 }
+/*合作伙伴*/
+.wjs_partner {
+  background-color: #eee;
+  text-align: center;
+}
+.wjs_partner h3 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.wjs_partner ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 auto;
+}
+.wjs_partner ul > li {
+  float: left;
+  font-size: 80px;
+  margin: 0 20px;
+}
